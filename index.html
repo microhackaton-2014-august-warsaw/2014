@@ -15,6 +15,7 @@
 		<script src="js/jquery.min.js"></script>
 		<script src="js/skel.min.js"></script>
 		<script src="js/init.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel-noscript.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -22,6 +23,30 @@
 		</noscript>
 		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="css/ie/v9.css" /><![endif]-->
+		<script>
+			var map;
+			$(function initialize() {
+				var latlng = new google.maps.LatLng(52.2034372,21.046155,17)
+			  var mapOptions = {
+			    zoom: 17,
+			    center: latlng
+			  };
+			  map = new google.maps.Map(document.getElementById('map-canvas'),
+			      mapOptions);
+
+			  var marker = new google.maps.Marker({
+			      position: latlng,
+			      map: map,
+			      title: 'Czerska 8/10'
+			  });
+
+				var infowindow = new google.maps.InfoWindow({
+			      content: '<div id="map-info">Microservice Hackaton, Agora Office, Czerska 8/10</div>'
+			  });
+
+				infowindow.open(map,marker);
+			})
+    </script>
 	</head>
 	<body>
 
@@ -88,8 +113,8 @@
 						</div>
 						<div class="row">
 							<div class="12u">
-								<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d2445.2020996849033!2d21.045796!3d52.203425!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd3c099ae37b%3A0x74bfecc724ca51eb!2sCzerska+8%2F10!5e0!3m2!1sen!2s!4v1404156396064" width="600" height="450" frameborder="0" style="border:0"></iframe></p>
-
+								<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m10!1m3!1d2445.2020996849033!2d21.045796!3d52.203425!2m1!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd3c099ae37b%3A0x74bfecc724ca51eb!2sCzerska+8%2F10!5e0!3m2!1sen!2s!4v1404156396064" width="600" height="450" frameborder="0" style="border:0"></iframe></p> -->
+								<div id="map-canvas"></div>
 								<footer>
 									<a href="#third" class="button scrolly">Spare a moment to thank our sponsors...</a>
 									<a href="http://www.meetup.com/Warszawa-Java-User-Group-Warszawa-JUG/events/192220832/" class="button scrolly">Or just REGISTER now!</a>
