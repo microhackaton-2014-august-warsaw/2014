@@ -134,6 +134,19 @@ If you follow the readme, you gonna have automatically deployable stubs for you 
 
 [boot-microservice-stub]:https://github.com/4finance/boot-microservice-stub
 
+#### Works on my machine (with stubs)
+
+Now that you have stubs, you want to fire them on your machine, right?
+
+No problem. At least as long as you're using gradle. You are using gradle, right?
+
+[micro-deps-gradle-plugin]
+
+This project gives you some fancy gradle tasks to run stubs/mocks on your machine (and others, if you want to).
+
+[micro-deps-gradle-plugin]: https://github.com/4finance/micro-deps-gradle-plugin
+
+
 #### Centralized logging
 
 When you have several microservices running together, grepping a log file doesn't work anymore. You need centralized logging. We have that for you as well.
@@ -331,6 +344,23 @@ Out
     ]
 }l
 ```
+
+
+How do I deploy/Zookeep/access DB?
+---- 
+
+Want some infrastructure? Of course you want some infrastructure! What good are microservices without infrastructure.
+
+You've got it! [infrastructure-setup]
+
+[infrastructure-setup]: https://github.com/microhackaton/2014/wiki/Infrastructure-setup
+
+FAQs?
+----
+
+Still having questions? Shit doesn't build on your computer? Have a look at our [FAQ]
+
+[FAQ]:https://github.com/microhackaton/2014/wiki/FAQ
 
 I don't know what I'm doin'!1!!! 
 -----
