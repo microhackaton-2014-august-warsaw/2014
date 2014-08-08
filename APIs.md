@@ -137,7 +137,7 @@ Out
 
 ```
 In 
-/{pairId}
+/api/{pairId}
 Output from Twitter Collector
 
 Out
