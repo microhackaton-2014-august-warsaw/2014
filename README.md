@@ -3,9 +3,6 @@ Microservice Hackaton
 
 Yep, hack a ton.
 
-Tutorial
-----
-
 This page should have all the info you need to start hacking. It's not about organization (you'll find it on our web page:  [microhackaton.github.io/2014/]), it's about the gory technical hardcore. But you are technical hardcore, aren't you?
 
 [microhackaton.github.io/2014/]:microhackaton.github.io/2014/
@@ -362,10 +359,12 @@ Still having questions? Shit doesn't build on your computer? Have a look at our 
 
 [FAQ]:https://github.com/microhackaton/2014/wiki/FAQ
 
-I don't know what I'm doin'!1!!! 
+Is that all I need to know? 
 -----
 
-Need some theory behind this?
+Shit, no! This stuff is complex. Need some theory behind this? Need to consider latency/fault tolerance? Need to stop cascading failures? There is a lot to read, and a lot to do.
+
+Going microservices is much harder in the short run, than a single JVM app. But in the long run, a large team on single, large JVM app, does not work. For several reasons. Read this:
 
 http://martinfowler.com/articles/microservices.html
 
