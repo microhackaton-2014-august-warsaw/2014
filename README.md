@@ -13,6 +13,8 @@ What we build
 ----
 Distributed system consisting from microservices, of course! Here is the big picture:
 
+![Alt text](https://raw.githubusercontent.com/microhackaton/2014/master/microhackathon_flow_0_1.png "What are we building: flow")
+
 Now for details of the flow:
 
 Normal user enters his details in Web GUI (client-side). Web GUI asks User data holder to generate link for this user, and returns the link.
