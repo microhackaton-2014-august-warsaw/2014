@@ -79,7 +79,7 @@ Twitter places analyzer: https://github.com/microhackaton/twitter-places-analyze
 
 UI: https://github.com/microhackaton/you-should-remember-me-ui
 
-But how do I microserivce?
+But how do I microservice?
 ----
 
 That's a valid question. If writing distributed systems was easy, we wouldn't be writing anything else. There is actually a shitload of things to consider. 
