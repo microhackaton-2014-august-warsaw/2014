@@ -6,10 +6,36 @@ Yep, hack a ton.
 Tutorial
 ----
 
-This page should have all the info you need to start hacking. It's not about organization (you'll find it on our web page:  microhackaton.github.io/2014/), it's about the gory technical hardcore. But you are technical hardcore, aren't you?
+This page should have all the info you need to start hacking. It's not about organization (you'll find it on our web page:  [microhackaton.github.io/2014/]), it's about the gory technical hardcore. But you are technical hardcore, aren't you?
 
+[microhackaton.github.io/2014/]:microhackaton.github.io/2014/
 
 What we build
+----
+
+Do you hate it, when you are a famous internet celebrity with thousands of friends, and somebody wants to add you to his friends/circles/linkedin/whatever, and acts like you should already know him/her, but you look on the picture and name and have absolutely no fucking idea, who the person is?
+
+Yeah, we too.
+
+So we are building a service, which will tell you, who this person is, and where do you know this person from. On one page. No search necessary.
+
+Welcome to YouShouldRememberMe
+
+User story:
+
+As an average human being, I want to add this internet celebrity to add me to friends, so I can act as if the one time we had a beer together means something.
+In order to do that:
+- I go to the site
+- I enter my details (github login, twitter login, google+ login, name, some other stuff)
+- The service creates a link for me.
+- I send the link to my celebrity
+
+As a celebrity I get a facebook/google+/whatever invitation with a link created by our system.
+- I go to the link
+- I enter my details (github login, twitter login, google+ login, name, some other stuff)
+- The service analyzes (anti)social networks, github, other places, and shows me a short summary of where I know that person from, and who the hell is (s)he.
+
+How we build
 ----
 Distributed system consisting from microservices, of course! Here is the big picture:
 
@@ -112,7 +138,13 @@ If you follow the readme, you gonna have automatically deployable stubs for you 
 
 When you have several microservices running together, grepping a log file doesn't work anymore. You need centralized logging. We have that for you as well.
 
-<TODO: describe it>
+We use logback reporting to logstash, with Kibana as visualization. If you are using logback, just set this as a log pattern:
+    
+    String logPattern = "%d{yyyy-MM-dd HH:mm:ss.SSSZ, Europe/Warsaw} | %-5level | %X{correlationId} | %thread | %logger{1} | %m%n"
+    
+And feed logstash, with for example [logstash-forwarder].
+
+[logstash-forwarder]:https://github.com/elasticsearch/logstash-forwarder
 
 
 #### CorrelationId, healthcheck, ping and other infrastructural stuff
@@ -300,6 +332,28 @@ Out
 }l
 ```
 
-#### NOW GO, START HACKING
+I don't know what I'm doin'!1!!! 
+-----
+
+Need some theory behind this?
+
+http://martinfowler.com/articles/microservices.html
+
+http://www.infoq.com/minibooks/emag-microservices#idp_register
+
+http://microservices.io/
+
+http://qconlondon.com/dl/qcon-london-2014/slides/AdrianCockcroft_MigratingToMicroservices.pdf
+
+Or maybe a book?
+
+http://shop.oreilly.com/product/0636920033158.do
+
+http://www.amazon.com/The-Phoenix-Project-Helping-Business/dp/0988262592
+
+
+#### Have fun!
+
+Your chosen technology turned out to be a piece of crap? You can’t handle Scala UTF-8 one liners? You’ve just found that nodejs is about js and you hate js with passion? Fuck that. Drop it, get another technology and play with it.
 
 Remember developer's ABC: Always Be Coding!
