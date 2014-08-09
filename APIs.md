@@ -3,6 +3,29 @@ What are the APIs?
 
 Good question. We don't have all of them yet. Here are some we have, please add more:
 
+##### Importance Judge
+
+In
+PUT /relationships
+
+```
+{
+    "pairId": 1,
+    "relationships": [
+        {
+            "score": 1,
+            "description": "Twitted together two days ago about Putin"
+        },
+        {
+            "score": 10,
+            "description": "Coded together three days ago in Groovy"
+        }
+    ]
+}
+```
+Out 202 Accepted
+Out 400 Bad Request - Score not with in range 1-10
+
 #####  Twitter Collector
 
 ```
