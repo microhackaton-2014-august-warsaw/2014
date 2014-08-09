@@ -6,7 +6,7 @@ Good question. We don't have all of them yet. Here are some we have, please add 
 ##### GUI
 
 In
-PUT /rest/results/result
+PUT /rest/results/result (Content-Type: application/vnd.gui.v1+json)
 
 ```
 {
