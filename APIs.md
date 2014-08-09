@@ -234,6 +234,41 @@ Out
     ]
 }l
 ```
+
+#####  Twitter Topics Analyzer
+
+```
+In 
+/api/{twitterLogin}/{pairId}
+Output from Twitter Collector
+
+Out
+{
+    “pairId” : 1,
+    “topics” :
+    [
+            {
+            "topic" :
+            {
+                "name":"Warsaw"
+            },
+            "probability" : 0.99,
+            "origin" : "twitter_hashtag"
+            }
+    ],
+    [
+            {
+            "topic" :
+            {
+                "name":"doe"
+            },
+            "probability" : 1.0,
+            "origin" : "twitter_user"
+            }
+    ]
+}
+```
+
 #### Topics correlator
 ```
 In
