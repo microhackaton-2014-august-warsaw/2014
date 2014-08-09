@@ -47,6 +47,7 @@ PUT /relationships
 
 In
 PUT /relationships
+Content-type: `application/vnd.com.ofg.importance-judge.v1+json`
 
 ```
 {
@@ -361,3 +362,4 @@ Odpowiedź: 200 OK
    ]
 }
 ```
+Twitted together two days ago about Putin
