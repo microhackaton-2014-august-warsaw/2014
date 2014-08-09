@@ -281,7 +281,7 @@ Output from In Judge
 In
 {
     “pairId” : 1,
-    "origin": "twitter"
+    "origin": "twitter",
     “places” :
     [
             {
