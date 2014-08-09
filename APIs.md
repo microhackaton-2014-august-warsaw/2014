@@ -246,7 +246,7 @@ Out
     "correlatorType": "topic",
     "relationships": [
         {
-            "score": 1,
+            "score": 10,
             "description": "Groovy"
         },
         {
