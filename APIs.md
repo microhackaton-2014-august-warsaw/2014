@@ -234,3 +234,26 @@ Out
     ]
 }l
 ```
+#### Topics correlator
+```
+In
+{
+TBA
+}
+Out
+{
+    "pairId": 1,
+    "correlatorType": "topic",
+    "relationships": [
+        {
+            "score": 1,
+            "description": "Groovy"
+        },
+        {
+            "score": 2,
+            "description": "JavaScript"
+        }
+    ]
+}
+
+```
