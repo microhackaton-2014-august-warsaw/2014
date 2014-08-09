@@ -366,3 +366,27 @@ Odpowiedź:
 }
 ```
 Twitted together two days ago about Putin
+
+#### Blog topics analyzer
+##### In
+
+Accepted Content-Type:
+```
+application/vnd.com.ofg.blog-topics-analyzer.v1+json
+```
+
+Hit *PUT* at: 
+
+```
+/api/{pairId}
+```
+
+with blog data:
+
+```
+TODO
+```
+
+##### Out
+
+
