@@ -3,7 +3,7 @@ What are the APIs?
 
 Good question. We don't have all of them yet. Here are some we have, please add more:
 
-##### Matcher
+##### GUI
 
 In
 PUT /relationships
