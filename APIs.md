@@ -257,7 +257,7 @@ Out
 }
 
 ```
-```
+
 #### Places correlator
 ```
 In
