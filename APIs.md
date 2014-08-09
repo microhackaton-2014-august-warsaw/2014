@@ -3,6 +3,46 @@ What are the APIs?
 
 Good question. We don't have all of them yet. Here are some we have, please add more:
 
+##### Matcher
+
+In
+PUT /relationships
+
+```
+{
+    "pairId": 1,
+    "relationships": [
+        {
+            "correlatorType": "sentence",
+            "relations": [
+                {
+                    "score": 1,
+                    "description": "Twitted together two days ago about Putin"
+                },
+                {
+                    "score": 10,
+                    "description": "Coded together three days ago in Groovy"
+                }
+            ]
+        },
+        {
+            "correlatorType": "place",
+            "relations": [
+                {
+                    "score": 1,
+                    "description": "Been in Cracow two days ago"
+                },
+                {
+                    "score": 10,
+                    "description": "Been in Berling one week ago"
+                }
+            ]
+        }
+    ]
+}
+```
+
+
 ##### Importance Judge
 
 In
