@@ -232,43 +232,8 @@ Out
             "origin" : "twitter_mention"
             }
     ]
-}l
-```
-
-#####  Twitter Topics Analyzer
-
-```
-In 
-/api/{twitterLogin}/{pairId}
-Output from Twitter Collector
-
-Out
-{
-    “pairId” : 1,
-    “topics” :
-    [
-            {
-            "topic" :
-            {
-                "name":"Warsaw"
-            },
-            "probability" : 0.99,
-            "origin" : "twitter_hashtag"
-            }
-    ],
-    [
-            {
-            "topic" :
-            {
-                "name":"doe"
-            },
-            "probability" : 1.0,
-            "origin" : "twitter_user"
-            }
-    ]
 }
 ```
-
 #### Topics correlator
 ```
 In
@@ -287,6 +252,52 @@ Out
         {
             "score": 2,
             "description": "JavaScript"
+        }
+    ]
+}
+
+```
+```
+#### Places correlator
+```
+In
+{
+    “pairId” : 1,
+    "origin": "twitter"
+    “places” :
+    [
+            {
+            "place" :
+            {
+                "name":"Washington",
+                "country_code": "US"
+            },
+            "probability" : "high",
+            "origin" : "twitter_place"
+            },
+            {
+            "place" :
+            {
+                "name":"Warsaw",
+                "country_code": "PL"
+            },
+            "probability" : "high",
+            "origin" : "twitter_mention"
+            }
+    ]
+}
+Out
+{
+    "pairId": 1,
+    "correlatorType": "place",
+    "relationships": [
+        {
+            "score": 10,
+            "description": "Were in Warsaw."
+        },
+        {
+            "score": 2,
+            "description": "Were in Lublin."
         }
     ]
 }
