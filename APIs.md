@@ -320,3 +320,42 @@ Out
 }
 
 ```
+
+#### Github topics analyzer (https://github.com/microhackaton/github-topics-analyzer)
+##### In
+
+Method: POST
+```
+{
+    "pairId" : "1",
+    "githubId" : "marcin",
+    "repositories_languages" : {
+       // Zgodne z https://api.github.com/users/:githubId/repos
+    ],
+    "organisations": [
+       // Zgodne z https://api.github.com/users/:githubId/orgs
+    ]
+}
+```
+
+Odpowiedź: 200 OK
+
+##### Out
+
+```
+{
+
+    "pairId" : "1",
+    "analyzerType" : "github",
+    "analyzedId" : "marcin",
+    "topics" :
+    [ 
+       { 
+        "name":"C"
+       },
+       { "
+        name":"Python"
+       }
+   ]
+}
+```
