@@ -329,10 +329,10 @@ Method: POST
 {
     "pairId" : "1",
     "githubId" : "marcin",
-    "repositories_languages" : {
+    "repos" : {
        // Zgodne z https://api.github.com/users/:githubId/repos
     ],
-    "organisations": [
+    "orgs": [
        // Zgodne z https://api.github.com/users/:githubId/orgs
     ]
 }
