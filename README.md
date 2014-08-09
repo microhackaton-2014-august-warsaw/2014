@@ -54,7 +54,7 @@ Matcher sends this data to all registered collector caches. If collector caches 
 
 Each analyzer analyzes the data. For example Twitter places analyzer, searches through tweets for places. Then analyzers send those to Collerators.
 
-A Collector get data from many different analyzers. Each time there is a call with a PairId that has already been present, it searches for common items in all sets of data with that PairId. For example Common Place and Date Collerator, searches the data for common places and dates. Then, Collerators create a score from 1-10 (how close the data is) and send the outcomes to Importance Judge.
+A Correlator get data from many different analyzers. Each time there is a call with a PairId that has already been present, it searches for common items in all sets of data with that PairId. For example Common Place and Date Correlator, searches the data for common places and dates. Then, Collerators create a score from 1-10 (how close the data is) and send the outcomes to Importance Judge.
 
 Importance Judge gathers all the scores and data, saves it locally, and creates a single prioritized list of where the Celebrity may know the normal person from. Then it sends it to Matcher.
 
