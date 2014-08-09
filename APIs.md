@@ -255,7 +255,7 @@ In
    ]
 }
 
-Valid values for analyzerType [twitter, google+, facebook, github, blog]
+Valid values for analyzerType [twitter, google_plus, facebook, github, blog]
 
 Out
 Output from In Judge
