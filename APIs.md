@@ -237,10 +237,27 @@ Out
 #### Topics correlator
 ```
 In
+
 {
-TBA
+
+    "pairId" : "1",
+    "analyzerType" : "twitter",
+    "analyzedId" : "marcin",
+    "topics" :
+    [ 
+       { 
+        "name":"Groovy"
+       },
+       { "
+        name":"Scala"
+       }
+   ]
 }
+
+Valid values for analyzerType [twitter, google+, facebook, github, blog]
+
 Out
+Output from In Judge
 {
     "pairId": 1,
     "correlatorType": "topic",
