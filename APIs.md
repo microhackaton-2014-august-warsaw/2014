@@ -11,6 +11,7 @@ PUT /relationships
 ```
 {
     "pairId": 1,
+    "correlatorType": "sentence",
     "relationships": [
         {
             "score": 1,
@@ -25,6 +26,7 @@ PUT /relationships
 ```
 Out 202 Accepted
 Out 400 Bad Request - Score not with in range 1-10
+Out 400 Bad Request - Valid values for correlatorType [sentence, place, topic]
 
 #####  Twitter Collector
 
