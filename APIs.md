@@ -237,6 +237,7 @@ Out
 ```
 #### Topics correlator
 ```
+POST /correlations
 In
 
 {
