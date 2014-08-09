@@ -324,6 +324,8 @@ Out
 #### Github topics analyzer (https://github.com/microhackaton/github-topics-analyzer)
 ##### In
 
+`/api/analyze`
+
 Method: POST
 ```
 {
