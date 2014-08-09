@@ -341,7 +341,9 @@ Method: POST
 }
 ```
 
-Odpowiedź: 200 OK
+Odpowiedź: 
+* 202 Accepted
+* 400 Bad Request - gdy brak body
 
 ##### Out
 
